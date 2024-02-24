@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <form action="" class="add-song" id="add-song">
+      <input
+        type="text"
+        class="add-song__title"
+        id="add-song__title"
+        placeholder="Nombre de la canción"
+      />
+      <select
+        name="gender"
+        id="add-song__gender"
+        class="add-song__select add-song__gender"
+      >
+        <option value="-" class="add-song__option">Género</option>
+      </select>
+      <select
+        name="rithm"
+        id="add-song__rithm"
+        class="add-song__select add-song__rithm"
+      >
+        <option value="-" class="add-song__option">Ritmo</option>
+      </select>
+      <div class="add-tags__container">
+        <select
+          name="rithm"
+          id="add-song__tags"
+          class="add-song__select add-song__tags"
+        >
+          <option value="-" class="add-song__option">Tags</option>
+        </select>
+        <button class="add-tag-btn" id="add-tag-btn">Añadir Etiqueta</button>
+      </div>
+      <button class="create-song-btn" id="create-song-btn">
+        Crear canción
+      </button>
+    </form>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
