@@ -148,10 +148,10 @@ const createSong = ($title, $gender, $rithm, tags) => {
 
 // create record
 
-$createSongBtn.addEventListener('click', (e) => {
+$createSongBtn.addEventListener('click', async (e) => {
   e.preventDefault()
   const song = createSong($titleSongInput, $addGender, $addRithm, selectedTags)
   // eslint-disable-next-line no-unused-vars
-  const record = pb.collection('song').create(song)
+  const record = await pb.collection('song').create(song)
   console.log(song)
 })
